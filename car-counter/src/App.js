@@ -1,9 +1,13 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Card from './components/Card'
 
 export default function App() {
     const [counter, setCounter] = useState([])
     const cars = ["brandweer", "ziekenauto"]
+
+    React.useEffect(() => {
+        localStorage.setItem("counter", JSON.stringify(counter))
+    }, [counter])
 
     function incrementCounter(index) {
         const copyCounter = [...counter]
