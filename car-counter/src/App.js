@@ -3,9 +3,9 @@ import Card from './components/Card'
 
 export default function App() {
     const [counter, setCounter] = useState([])
-    const cars = ["brandweer", "ziekenauto"]
+    const cars = ["brandweer", "ziekenauto", "raceauto"]
 
-    React.useEffect(() => {
+    useEffect(() => {
         localStorage.setItem("counter", JSON.stringify(counter))
     }, [counter])
 
@@ -28,6 +28,7 @@ export default function App() {
                 incrementCounter={() => incrementCounter(index)}
                 decrementCounter={() => decrementCounter(index)}
                 counter={counter[index]}
+                carName={car}
             />
         )
     })
