@@ -1,7 +1,10 @@
 .carCard {
     display: flex;
 }
-
+.carCard--image {
+    width: 150px;
+    height: 150px;
+}
 .carCard--counter {
     background-color: #bee0ec;
     width: 100px;

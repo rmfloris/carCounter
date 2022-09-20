@@ -8,7 +8,7 @@ export default function Card(props) {
             <div className="container">
                 <div className="row row-cols-auto">
                     <div className="col">
-                        <img src="https://via.placeholder.com/150" alt="test" />
+                        <img src={props.car.image} alt="test" className="carCard--image" />
                     </div>
                     <div className="col">
                         <div className="carCard--counter">
@@ -18,7 +18,6 @@ export default function Card(props) {
                 </div>
                 <div className="row row-cols-auto">
                     <div className="carCard--buttons">
-                        {props.carName}
                         <button 
                             className="carCard--button"
                             onClick={props.incrementCounter}
