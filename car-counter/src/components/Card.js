@@ -4,8 +4,8 @@ export default function Card(props) {
     const tallyMarks = require("tally-marks");
 
     return (
-        <div className="carCard col-6">
-            <div className="container">
+        <div className="carCard col-3 d-flex justify-content-center">
+            <div className="carCard--container">
                 <div className="row row-cols-auto">
                     <div className="col">
                         <img src={props.car.image} alt="test" className="carCard--image" />
@@ -16,7 +16,7 @@ export default function Card(props) {
                         </div>
                     </div>
                 </div>
-                <div className="row row-cols-auto">
+                <div className="row mx-auto">
                     <div className="carCard--buttons">
                         <button 
                             className="carCard--button"

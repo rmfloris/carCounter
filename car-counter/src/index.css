@@ -7,15 +7,19 @@
 }
 .carCard--counter {
     background-color: #bee0ec;
-    width: 100px;
+    width: 200px;
     height: 150px;
     padding: 0 10px;
+    font-size: 1.5em;
 }
-
+.carCard--container {
+    margin: 0 0 50px;
+    box-shadow: 5px 5px 5px black;
+    padding: 0 0 5px;
+}
 .carCard--buttons {
     display: flex;
 }
-
 
 .carCard--button {
   background-color: #405cf5;
